@@ -1,9 +1,13 @@
 import React from 'react';
+import { Navigation } from "./routes";
+
+import { ClientLayout } from "./Layouts"
 
 export default function App() {
   return (
-    <div>
-      <h1>Inicializando SaborExpress</h1>
-    </div>
-  )
-}
+    <ClientLayout>
+        <h1>Inicializando SaborExpress</h1>
+      <Navigation />
+    </ClientLayout>
+  );
+} 
